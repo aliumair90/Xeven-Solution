@@ -11,6 +11,36 @@
   z-index: 1000;
 }
 
+.bill-generator-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  flex-direction: column;
+}
+
+.bill-generator-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Space between form elements */
+  width: 300px; /* Adjust the width as needed */
+}
+
+.bill-generator-form input,
+.bill-generator-form button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: #fff;
+
+}
+.bill-generator-form input:focus {
+  color: #ccc; /* Set placeholder text color */
+}
+
+.bill-generator-form button {
+  cursor: pointer;
+}
+
 .overlay-menu {
   position: fixed;
   top: 0;
