@@ -1,4 +1,5 @@
 import React from "react";
+import CountUp from "react-countup";
 
 const About = () => {
   return (
@@ -33,19 +34,27 @@ const About = () => {
         data-aos="fade-up"
       >
         <div className="col-block stats__col">
-          <div className="stats__count">127</div>
+          <div className="stats__count">
+            <CountUp end={127} duration={2} />
+          </div>
           <h5 className="">Awards Received</h5>
         </div>
         <div className="col-block stats__col text-center">
-          <div className="stats__count  font-bold">1505</div>
+          <div className="stats__count font-bold">
+            <CountUp end={1505} duration={2} />
+          </div>
           <h5 className="">Cups of Coffee</h5>
         </div>
-        <div className="col-block stats__col ">
-          <div className="stats__count ">109</div>
+        <div className="col-block stats__col">
+          <div className="stats__count">
+            <CountUp end={109} duration={2} />
+          </div>
           <h5 className="text-lg mt-2">Projects Completed</h5>
         </div>
-        <div className="col-block stats__col ">
-          <div className="stats__count">102</div>
+        <div className="col-block stats__col">
+          <div className="stats__count">
+            <CountUp end={102} duration={2} />
+          </div>
           <h5 className="">Happy Clients</h5>
         </div>
       </div>{" "}
